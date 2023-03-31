@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="lanchonete.css">
+    <link rel="icon" href="lanchonete.png" type="image/png">    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <body background="mostarda.jpeg">
+        <div id="menu-h"><img src="logo.png" alt="" width="78px" id="solo">
+    
+            <nav>
+                <ul>
+                    <li><a href="index.html">Login</a></li>
+                    <li><a href="cardápio.html">Cardapio</a></li>
+                  
+                    <li><a href="Saiba mais.html">Mais Sobre</a></li>
+    
+                </ul>
+    
+            </nav>
+            <div style="text-align: center;">
+                <H1>LANCHONETE ALABA </H1>
+            </div>
+        </div>
+
+        <div class="container_form">
+            <h1>Formulário de Cadastro</h1>
+            <form class="form" action="#" method="post">
+           
+                <div class="form_grupo">
+                    <label for="nome" class="form_label"style="color: rgb(255, 255, 255); font-size:20px;  margin-right: 90px">Usurário</label>
+                    <input type="text" name="Usurário" class="form_input" id="nome" placeholder="Usurário" required style="color:whiteS; width:200px;">
+                </div>
+
+                
+                
+                <div class="form_grupo">
+                    <label for="e-mail" class="form_label" style="color: rgb(255, 255, 255); width: 100px; font-size:20px; margin-right: 111px;" >  Senha</label>
+                    <input type="password" name="Senha" class="form_input" id="Senha" placeholder="senha com 8 digitos+" required style="color:white; width:200px;">
+                </div>
+
+                <div class="form_grupo">
+                    <label for="e-mail" class="form_label" style="color: rgb(255, 255, 255); width: 100px; font-size:20px;" >Confirme sua Senha</label>
+                    <input type="password" name="SEnha" class="form_input" id="Senha" placeholder="senha com 8 digitos+" required style="color:white; width:200px;">
+                </div>
+                
+                <div class="form_grupo">
+                    <label for="datanascimento" class="form_label" style="color: rgb(255, 255, 255); font-size:20px;"> Data de Nascimento</label>
+                    <input type="date" name="datanascimento" class="form_input" id="datanascimento" placeholder="Data de Nascimento" required style="color:white; width:200px;">
+                </div>        
+                <div class="form_grupo">
+                    
+                    <label for="estadocivil" class="text" style="color: rgb(255, 255, 255); font-size:20px; margin-right: 65px"> Estado civil</label>
+                    <select name="estadocivil" class="dropdown" required style="color:white;">
+                        
+                        <option selected disabled class="form_select_option" value="">Selecione</option>
+                        <option value="Solteiro" class="form_select_option">Solteiro(a)</option>
+                        <option value="Casado" class="form_select_option">Casado(a) </option>
+                        <option value="Divorciado" class="form_select_option">Divorciado(a)</option>                    
+                        <option value="Viúvo" class="form_select_option">Viúvo(a)</option>                    
+                    
+                    </select>
+                </div>
+                <div class="form_grupo">
+                    <span class="legenda"style="color: rgb(255, 255, 255); font-size:20px;">Sexo:</span>
+                    
+                    <div class="radio-btn">
+                        <input type="radio" class="form_new_input" id="masculino" name="sexo" value="Masculino" required="required">
+                        <label for="masculino" class="radio_label form_label"> <span class="radio_new_btn"></span> <p style="color: white;">Masculino</p></label>
+                    </div>
+                    <div class="radio-btn">
+                        <input type="radio" class="form_new_input" id="feminino" name="sexo" value="Feminino" required="required">
+                        <label for="feminino" class="radio_label form_label"> <span class="radio_new_btn"></span><p style="color: white;">Feminino</p></label>
+                    
+                </div>
+           
+            </div>
+      
+                <div class="form_grupo">
+                    
+                   
+                    
+                   
+                    <div class="submit">
+                      <input type="hidden" name="acao" value="enviar">
+                      <button type="submit" name="Submit" class="submit_btn" > <a href="index.html" style="text-decoration: none;"> Cadastrar</a></button>
+                    
+                    </div>
+                
+            </form>
+    </div><!--container_form-->
+</body>
+</html>
